@@ -1,0 +1,23 @@
+[package]
+name = "bgp_attribute_survey"
+version = "0.1.0"
+edition = "2021"
+
+# Enabling fat LTO to improve performance
+[profile.release]
+lto = "fat"
+
+[dependencies]
+# Use latest changes to test updates
+bgpkit-parser = { git = "https://github.com/jmeggitt/bgpkit-parser.git", rev = "4c47a57" }
+bgpkit-broker = "0.7.0-alpha.3"
+rayon = "1.7.0"
+smallvec = { version = "1.11.0", features = ["union"] }
+chrono = "0.4.26"
+crossbeam-channel = "0.5.8"
+ureq = "2.7.1"
+oneio = "0.11.0"
+
+flate2 = "1.0"
+bzip2 = "0.4.4"
+lz4 = "1.24.0"
