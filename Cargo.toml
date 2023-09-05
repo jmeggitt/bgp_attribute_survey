@@ -2,6 +2,8 @@
 name = "bgp_attribute_survey"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jasper Meggitt <jasper.meggitt@gmail.com>"]
+license = "MIT"
 
 # Enabling fat LTO to improve performance
 [profile.release]
